@@ -1,7 +1,10 @@
 <?php Class Category{
 
     private $db;
+/*
+https://www.facebook.com/groups/WebDevPk/
 
+ */
 	public function __construct(){
         $dbint = Database::getInstance();
         $this->db = $dbint->getConnection();
