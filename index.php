@@ -1,10 +1,10 @@
 <?php
 include('autoload.php');
-category = new Category();
 
-$myCategories= $category->read_type_for_dropdown();
- var_dump($myCategories);
- /*
- https://www.facebook.com/groups/WebDevPk/
+
+$category = new Category();
+
+$category_stmt = $category->read_type_for_dropdown();
+$row_category = $category_stmt->fetch(PDO::FETCH_ASSOC);
  
-  */
+var_dump($row_category);die();

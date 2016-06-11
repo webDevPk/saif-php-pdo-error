@@ -19,9 +19,8 @@ https://www.facebook.com/groups/WebDevPk/
 
         $stmt = $this->db->prepare( $query );
         $stmt->execute();
-        $data = $stmt->get_result();
-        $dataSet = $data->fetch_all();
-        return $dataSet;
+        
+        return $stmt;
 }
 
 
